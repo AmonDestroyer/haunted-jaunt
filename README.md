@@ -19,6 +19,15 @@ Below are section of the John Lemon's Tutorial.
 | [Audio](https://learn.unity.com/tutorial/audio-ayf?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
 | [Build, Run, Distribute](https://learn.unity.com/tutorial/build-run-distribute-1?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
 
+## Extra Additions
+### Ideas
+Below is a list of cool ideas to include in this assignment for fun.
+
+* Dynamic enemies that try to follow the player.
+* Player can kill enemies
+* Player can hide from the enemies
+### Implementations
+
 ## Authors
 
 * Adam Case
