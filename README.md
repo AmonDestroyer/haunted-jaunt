@@ -7,8 +7,8 @@ tutorial on Unity Learn.
 ## Sections
 Below are section of the John Lemon's Tutorial.
 
-| :---------- | :---: |
 | Section | Completed |
+| :---------- | :---: |
 | [Get started with John Lemon's Haunted Jaunt](https://learn.unity.com/tutorial/the-player-character-part-1?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | Yes |
 | [Write a script for character movement](https://learn.unity.com/tutorial/player-character-part-2-the-script?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
 | [The Environment](https://learn.unity.com/tutorial/the-environment?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
