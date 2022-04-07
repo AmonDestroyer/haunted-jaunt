@@ -22,11 +22,13 @@ Below are section of the John Lemon's Tutorial.
 ## Extra Additions
 ### Ideas
 Below is a list of cool ideas to include in this assignment for fun.
-
 * Dynamic enemies that try to follow the player.
 * Player can kill enemies
 * Player can hide from the enemies
+
 ### Implementations
+Below is a list of the implemented ideas.
+* None QQ
 
 ## Authors
 
