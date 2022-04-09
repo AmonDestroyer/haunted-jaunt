@@ -33,5 +33,5 @@ Below is a list of the implemented ideas.
 ## Authors
 
 * Adam Case
-* <Author 2>
+* Oliver Hostick
 * <Author 3>
