@@ -20,16 +20,18 @@ Below are section of the John Lemon's Tutorial.
 | [Build, Run, Distribute](https://learn.unity.com/tutorial/build-run-distribute-1?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
 
 ## Extra Additions
-### Ideas
+Below is a list of the implemented ideas.
+| Section | Implements | Completed |
+| :---------- | :---: | :---: |
+| Player Movement | Dot Product | No |
+| Star Rating System | Linear Interpolation | No |
+| Particle Effect | Particle Effect | No |
+
+### Additional Ideas
 Below is a list of cool ideas to include in this assignment for fun.
 * Dynamic enemies that try to follow the player.
 * Player can kill enemies
 * Player can hide from the enemies
-* Update player camera and movement input to not be so unintuitive
-
-### Implementations
-Below is a list of the implemented ideas.
-* None QQ
 
 ## Authors
 
