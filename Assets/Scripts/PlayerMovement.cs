@@ -54,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
 
         m_Rotation = Quaternion.LookRotation(m_Movement);
 
-        m_LookDir = Quaternion.AngleAxis(turnSpeed * Time.deltaTime, Vector3.up);
 
         if (debugMode)
         {
