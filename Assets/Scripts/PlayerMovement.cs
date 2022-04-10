@@ -35,7 +35,6 @@ public class PlayerMovement : MonoBehaviour
         bool isWalking = !Mathf.Approximately(vertical, 0.0f);
         m_Animator.SetBool("IsWalking", isWalking);
 
-<<<<<<< HEAD
         if (isWalking)
         {
             if (!m_AudioSource.isPlaying)
@@ -51,7 +50,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
         
         m_Rotation = Quaternion.LookRotation(desiredForward);
-=======
         m_Movement = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
 
         m_Rotation = Quaternion.LookRotation(m_Movement);
@@ -65,7 +63,6 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log($"Command Direction: ({face},0)");
         }
 
->>>>>>> 080d85a (Implement character movement correction)
     }
 
     void OnAnimatorMove()
