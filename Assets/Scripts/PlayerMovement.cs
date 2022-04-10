@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public bool debugMode = false;
-    public float turnSpeed = 20.0f;
+    public float turnSpeed = 1.0f;
 
     Animator m_Animator;
     Rigidbody m_Rigidbody;
@@ -26,17 +26,16 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        if(debugMode)
-            Debug.Log($"Input: ({horizontal},{vertical})");
-            
-        m_Movement.Set(horizontal, 0.0f, vertical);
+        
+        Vector3 face = transform.forward * vertical;
+        Vector3 side = Vector3.Cross(transform.forward, Vector3.up) * -horizontal;
+        m_Movement = face + side;
         m_Movement.Normalize();
 
-        bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0.0f);
-        bool hasVerticalInput = !Mathf.Approximately(vertical, 0.0f);
-        bool isWalking = hasHorizontalInput || hasVerticalInput;
+        bool isWalking = !Mathf.Approximately(vertical, 0.0f);
         m_Animator.SetBool("IsWalking", isWalking);
 
+<<<<<<< HEAD
         if (isWalking)
         {
             if (!m_AudioSource.isPlaying)
@@ -52,6 +51,21 @@ public class PlayerMovement : MonoBehaviour
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
         
         m_Rotation = Quaternion.LookRotation(desiredForward);
+=======
+        m_Movement = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
+
+        m_Rotation = Quaternion.LookRotation(m_Movement);
+
+        m_LookDir = Quaternion.AngleAxis(turnSpeed * Time.deltaTime, Vector3.up);
+
+        if (debugMode)
+        {
+            Debug.Log($"Input: ({horizontal},{vertical})");
+            Debug.Log($"Look Direction: ({transform.forward.x},{transform.forward.z})");
+            Debug.Log($"Command Direction: ({face},0)");
+        }
+
+>>>>>>> 080d85a (Implement character movement correction)
     }
 
     void OnAnimatorMove()
