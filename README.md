@@ -13,7 +13,7 @@ Below are section of the John Lemon's Tutorial.
 | [Write a script for character movement](https://learn.unity.com/tutorial/player-character-part-2-the-script?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | Yes |
 | [The Environment](https://learn.unity.com/tutorial/the-environment?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | Yes |
 | [The Camera](https://learn.unity.com/tutorial/the-camera?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | Yes |
-| [Ending the Game](https://learn.unity.com/tutorial/ending-the-game?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
+| [Ending the Game](https://learn.unity.com/tutorial/ending-the-game?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | Yes|
 | [Enemies, Part 1: Static Observers](https://learn.unity.com/tutorial/enemies-part-1-static-observers?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
 | [Enemies, Part 2: Dynamic Observers](https://learn.unity.com/tutorial/enemies-part-2-dynamic-observers?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
 | [Audio](https://learn.unity.com/tutorial/audio-ayf?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
@@ -25,6 +25,7 @@ Below is a list of cool ideas to include in this assignment for fun.
 * Dynamic enemies that try to follow the player.
 * Player can kill enemies
 * Player can hide from the enemies
+* Update player camera and movement input to not be so unintuitive
 
 ### Implementations
 Below is a list of the implemented ideas.
