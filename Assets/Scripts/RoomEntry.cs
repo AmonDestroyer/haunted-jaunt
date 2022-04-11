@@ -25,19 +25,11 @@ public class RoomEntry : MonoBehaviour
     bool m_HasAudioPlayed;
     float m_Direction;
 
-    Rigidbody m_Rigidbody;
-
-    //Called before the first 
-    void Start()
-    {
-        m_Rigidbody = GetComponent<Rigidbody>();
-        locationText.text = location;
-    }
-
     void OnTriggerEnter (Collider other)
     {
         if(other.gameObject == player)
         {
+            locationText.text = location;
             m_Direction = Vector3.Dot(transform.forward, player.transform.forward);
             if(m_Direction > 0)
             {
