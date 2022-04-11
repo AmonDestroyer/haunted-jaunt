@@ -2,9 +2,10 @@
 ## Description
 This project goes through the
 [John Lemon's Haunted Jaunt](https://learn.unity.com/project/john-lemon-s-haunted-jaunt-3d-beginner)
-tutorial on Unity Learn.
+tutorial on Unity Learn. Additionally there are other topics that need/want
+to be completed and are added in the Additions section.
 
-## Sections
+## Tutorial Completions
 Below are section of the John Lemon's Tutorial.
 
 | Section | Completed |
@@ -19,19 +20,26 @@ Below are section of the John Lemon's Tutorial.
 | [Audio](https://learn.unity.com/tutorial/audio-ayf?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | Yes, up to the Ghost Audio portion |
 | [Build, Run, Distribute](https://learn.unity.com/tutorial/build-run-distribute-1?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) | No |
 
-## Extra Additions
+## Additions
 Below is a list of the implemented ideas.
 | Section | Implements | Completed |
-| :---------- | :---: | :---: |
-| Player Movement | Dot Product | No |
+| :---------- | :--------------: | :---: |
+| Room Entry | Dot Product | Yes |
 | Star Rating System | Linear Interpolation | No |
 | Particle Effect | Particle Effect | No |
+| Player Movement | Cross Product | Yes
 
 ### Additional Ideas
 Below is a list of cool ideas to include in this assignment for fun.
 * Dynamic enemies that try to follow the player.
 * Player can kill enemies
 * Player can hide from the enemies
+
+## Bugs
+Below lists some bugs currently known in the game to be fixed.
+* Walking Backwards: Currently with how the backwards walk is calculated
+the camera and player do some funky movement. Update to allow walking back
+without changing player direction would make the backward movement more fluid.
 
 ## Authors
 
