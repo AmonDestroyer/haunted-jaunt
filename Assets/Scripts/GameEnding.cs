@@ -13,7 +13,7 @@ public class GameEnding : MonoBehaviour
     public CanvasGroup caughtBackgroundImageCanvasGroup;
     public AudioSource caughtAudio;
 
-    //bool m_IsPlayerCaught;
+    bool m_IsPlayerCaught;
     bool m_IsPlayerAtExit;
     float m_Timer;
     bool m_HasAudioPlayed;
@@ -28,10 +28,10 @@ public class GameEnding : MonoBehaviour
 
     //commented sections to be implemented in Enemy movement section
 
-    //public void CaughtPlayer()
-    //{
-    //    m_IsPlayerCaught = true;
-    //}
+    public void CaughtPlayer()
+    {
+        m_IsPlayerCaught = true;
+    }
 
     void Update()
     {
@@ -39,10 +39,10 @@ public class GameEnding : MonoBehaviour
         {
             EndLevel(exitBackgroundImageCanvasGroup, false, exitAudio);
         }
-        //else if (m_IsPlayerCaught)
-        //{
-        //    EndLevel(caughtBackgroundImageCanvasGroup, true, caughtAudio);
-        //}
+        else if (m_IsPlayerCaught)
+        {
+            EndLevel(caughtBackgroundImageCanvasGroup, true, caughtAudio);
+        }
     }
 
     void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)

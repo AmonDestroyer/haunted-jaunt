@@ -45,4 +45,4 @@ without changing player direction would make the backward movement more fluid.
 
 * Adam Case
 * Oliver Hostick
-* <Author 3>
+* Jay Taylor
