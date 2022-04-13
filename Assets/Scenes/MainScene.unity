@@ -1467,7 +1467,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103317846}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5795,6 +5795,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 243708477451224730, guid: 50b4bd0ffdc12154b86f53990dfa8149,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 631396180692066890, guid: 50b4bd0ffdc12154b86f53990dfa8149,
+        type: 3}
+      propertyPath: ghost
+      value: 
+      objectReference: {fileID: 1619742430266332722}
+    - target: {fileID: 631396180692066890, guid: 50b4bd0ffdc12154b86f53990dfa8149,
+        type: 3}
+      propertyPath: gameEnding
+      value: 
+      objectReference: {fileID: 440151239}
     - target: {fileID: 3517221531826240913, guid: 50b4bd0ffdc12154b86f53990dfa8149,
         type: 3}
       propertyPath: m_Name
@@ -5860,7 +5875,8 @@ PrefabInstance:
       propertyPath: turnSpeed
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5136193710743915119, guid: 50b4bd0ffdc12154b86f53990dfa8149, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 50b4bd0ffdc12154b86f53990dfa8149, type: 3}
 --- !u!1001 &4128138427617306430
 PrefabInstance:
@@ -5950,6 +5966,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3822352034485401070, guid: 961d1738bc9d0bd49b00960879e5ab4c,
         type: 3}
+      propertyPath: alpha
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822352034485401070, guid: 961d1738bc9d0bd49b00960879e5ab4c,
+        type: 3}
+      propertyPath: maxFade
+      value: 255
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822352034485401070, guid: 961d1738bc9d0bd49b00960879e5ab4c,
+        type: 3}
       propertyPath: waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -6032,6 +6058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8953469530240822324, guid: 961d1738bc9d0bd49b00960879e5ab4c,
+        type: 3}
+      propertyPath: alpha
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 961d1738bc9d0bd49b00960879e5ab4c, type: 3}
