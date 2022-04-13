@@ -18,7 +18,7 @@ Below are section of the John Lemon's Tutorial.
 | [Enemies, Part 1: Static Observers](https://learn.unity.com/tutorial/enemies-part-1-static-observers?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) |    Yes    |
 | [Enemies, Part 2: Dynamic Observers](https://learn.unity.com/tutorial/enemies-part-2-dynamic-observers?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) |    Yes    |
 | [Audio](https://learn.unity.com/tutorial/audio-ayf?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) |    Yes    |
-| [Build, Run, Distribute](https://learn.unity.com/tutorial/build-run-distribute-1?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) |    No     |
+| [Build, Run, Distribute](https://learn.unity.com/tutorial/build-run-distribute-1?uv=2020.3&projectId=5caf65ddedbc2a08d53c7acb) |    Yes     |
 
 ## Additions
 Below is a list of the implemented ideas.
