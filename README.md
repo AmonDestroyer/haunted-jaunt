@@ -25,15 +25,15 @@ Below is a list of the implemented ideas.
 | Section | Implements | Completed |
 | :---------- | :--------------: | :---: |
 | Room Entry | Dot Product | Yes |
-| Star Rating System | Linear Interpolation | No |
+| Ghost Killer | Linear Interpolation | No |
 | Particle Effect | Particle Effect | No |
 | Player Movement | Cross Product | Yes
 
 ### Additional Ideas
 Below is a list of cool ideas to include in this assignment for fun.
 * Dynamic enemies that try to follow the player.
-* Player can kill enemies
 * Player can hide from the enemies
+* Rating system based on how long it took the player to complete the level
 
 ## Bugs
 Below lists some bugs currently known in the game to be fixed.
