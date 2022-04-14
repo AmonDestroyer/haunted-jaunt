@@ -37,9 +37,6 @@ Below is a list of cool ideas to include in this assignment for fun.
 
 ## Bugs
 Below lists some bugs currently known in the game to be fixed.
-* Walking Backwards: Currently with how the backwards walk is calculated
-the camera and player do some funky movement. Update to allow walking back
-without changing player direction would make the backward movement more fluid.
 
 ## Authors
 
