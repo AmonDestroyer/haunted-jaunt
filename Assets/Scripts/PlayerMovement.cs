@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     Animator m_Animator;
     Rigidbody m_Rigidbody;
     AudioSource m_AudioSource;
-    Vector3 m_Movement; 
+    Vector3 m_Movement;
+    Vector3 m_lookDir;
     Quaternion m_Rotation = Quaternion.identity;
 
     // Start is called before the first frame update
@@ -27,11 +28,7 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         
-        Vector3 face = transform.forward * vertical;
-        Vector3 side = Vector3.Cross(transform.forward, Vector3.up) * -horizontal;
-        m_Movement = face + side;
-        m_Movement.Normalize();
-
+        
         bool isWalking = !Mathf.Approximately(vertical, 0.0f);
         m_Animator.SetBool("IsWalking", isWalking);
 
@@ -47,13 +44,29 @@ public class PlayerMovement : MonoBehaviour
             m_AudioSource.Stop();
         }
 
-        Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
+        Vector3 face = transform.forward * vertical;
+        Vector3 side = transform.right * horizontal;
+        m_Movement = face + side;
+        m_Movement.Normalize();
         
+
+        if (vertical < 0)
+        {
+            vertical = -1 * vertical;
+            //Some sliding still occurs when walking back, in the forward this is corrected
+            //by adding the rotate towards to smoothe the walk direction vecotr but it does
+            //not really work well here.
+            Vector3 back = Quaternion.AngleAxis(180, transform.up) * transform.forward;
+            m_Movement = Vector3.RotateTowards(back, m_Movement, turnSpeed * Time.deltaTime, 0f);
+        }
+        else
+            m_Movement = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
+        face = transform.forward * vertical;
+        m_lookDir = face + side;
+        m_lookDir.Normalize();
+
+        Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_lookDir, turnSpeed * Time.deltaTime, 0f);
         m_Rotation = Quaternion.LookRotation(desiredForward);
-        m_Movement = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
-
-        m_Rotation = Quaternion.LookRotation(m_Movement);
-
 
         if (debugMode)
         {
