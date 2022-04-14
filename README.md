@@ -25,8 +25,8 @@ Below is a list of the implemented ideas.
 | Section | Implements | Completed |
 | :---------- | :--------------: | :---: |
 | Room Entry | Dot Product | Yes |
-| Ghost Killer | Linear Interpolation | No |
-| Particle Effect | Particle Effect | No |
+| Ghost Transparency Modifier (modifiable public variable) | Linear Interpolation | Yes |
+| Exit Portal | Particle Effect | Yes |
 | Player Movement | Cross Product | Yes
 
 ### Additional Ideas
